@@ -26,7 +26,7 @@ public class AsyncBitmapDownloader extends AsyncTask<String, Void, Bitmap> {
     }
 
     @Override
-    protected Bitmap doInBackground(String... strings) {
+    protected Bitmap doInBackground(String... strings) { // I comented only the doInBackground of the AsyncFlickrJSONData class
         URL url = null;
         try {
             url = new URL(strings[0]);

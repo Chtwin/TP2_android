@@ -24,7 +24,7 @@ public class AsyncFlickrJSONDataForList extends AsyncTask<String, Void, JSONObje
     }
 
     @Override
-    protected JSONObject doInBackground(String... urls) {
+    protected JSONObject doInBackground(String... urls) { // I comented only the doInBackground of the AsyncFlickrJSONData class
         JSONObject s = null;
         try {
             URL url = new URL(urls[0]);
@@ -43,7 +43,7 @@ public class AsyncFlickrJSONDataForList extends AsyncTask<String, Void, JSONObje
         return s;
     }
 
-    private JSONObject readStream(InputStream is) {
+    private JSONObject readStream(InputStream is) { // I comented only the readstream of the AsyncFlickrJSONData class
         try {
             ByteArrayOutputStream bo = new ByteArrayOutputStream();
             int i = is.read();
